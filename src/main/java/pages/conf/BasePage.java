@@ -1,4 +1,4 @@
-package pages;
+package pages.conf;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,5 +21,11 @@ public abstract class BasePage {
     public void presenceOfElementLocated(By element, int seconds) {
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
+    }
+
+    public String getTextFromAlert(){
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.alertIsPresent());
+        return driver.switchTo().alert().getText();
     }
 }

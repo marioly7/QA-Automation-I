@@ -2,10 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.conf.BasePage;
 
-public class CartPage extends BasePage{
+public class CartPage extends BasePage {
 
     protected final By productName = By.xpath("//tr/td[contains(text(), 'MacBook air')]");
     protected final By totalPrice = By.id("totalp");

@@ -2,10 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.conf.BasePage;
 
-public class CompletedOrderPage extends BasePage{
+public class CompletedOrderPage extends BasePage {
 
     protected final By successAlert = By.className("showSweetAlert");
     protected final By orderValuesContainer = By.xpath("//div[contains(@class, 'sweet-alert') and contains(@class, 'showSweetAlert') and contains(@class, 'visible')]/p");

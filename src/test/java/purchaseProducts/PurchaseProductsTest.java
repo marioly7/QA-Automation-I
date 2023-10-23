@@ -1,15 +1,15 @@
 package purchaseProducts;
 
-import basePage.BaseTest;
+import conf.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 
-public class PurchaseProducts extends BaseTest {
+public class PurchaseProductsTest extends BaseTest {
 
     protected final String[] expectedOrderValues = {"Marioly Vargas", "España", "Barcelona", "48392732332", "Septiembre", "2022"};
 
-    @Test
+    @Test(description = "Purchase laptop product")
     public void purchaseProducts() {
 
         String expectedProductName = "MacBook air";
@@ -51,4 +51,5 @@ public class PurchaseProducts extends BaseTest {
 
         Assert.assertTrue(homePage.categoriesAreDisplayed());
     }
+
 }

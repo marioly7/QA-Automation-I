@@ -4,8 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.conf.BasePage;
 
-public class ProductPage extends BasePage{
+public class ProductPage extends BasePage {
 
     protected final By addToCartButton = By.xpath("/html/body/div[5]/div/div[2]/div[2]/div/a");
     protected final By productName = By.className("name");
